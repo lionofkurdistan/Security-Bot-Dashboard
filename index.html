@@ -1,0 +1,2229 @@
+<!doctype html>
+<html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+
+<head>
+    <title>Security Bot</title>
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+    <meta data-n-head="ssr" data-hid="og:type" name="og:type" property="og:type" content="website">
+    <meta data-n-head="ssr" data-hid="og:image" name="og:image" property="og:image" content="/fabicon-200x.png">
+    <meta data-n-head="ssr" name="theme-color" content="#23272a">
+    <meta data-n-head="ssr" name="msapplication-TileColor" content="#23272a">
+    <meta data-n-head="ssr" name="keywords" content="server security,discord security,discord protection,discord anti nuke,nuke protection discord bot,moderation discord bot,discord protection bot,anti nuke discord bot,security discord bot,security bot,security bot discord,بوت ديسكورد">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="Anti Nuke capabilities, Powerful moderation features, Warning messages, Auto punishments and more, Eliminate unwanted behavior in seconds.">
+    <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Security Bot">
+    <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://securitybot.xyz/">
+    <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Anti Nuke capabilities, Powerful moderation features, Warning messages, Auto punishments and more, Eliminate unwanted behavior in seconds.">
+    <link data-n-head="ssr" rel="icon" type="image/png" sizes="100x100" href="/fabicon.png">
+    <link data-n-head="ssr" rel="icon" type="image/png" sizes="200x200" href="/fabicon-200x.png">
+    <link rel="preload" href="/_nuxt/84a21a8.js" as="script">
+    <link rel="preload" href="/_nuxt/0f77e43.js" as="script">
+    <link rel="preload" href="/_nuxt/58f1662.js" as="script">
+    <link rel="preload" href="/_nuxt/1c0e49c.js" as="script">
+    <link rel="preload" href="/_nuxt/5fe6ada.js" as="script">
+    <style data-vue-ssr-id="65b97e00:0 17bc9ac2:0 d2cdb8f2:0 771aba7f:0 863dcd4e:0 37afca31:0 5d43d332:0">
+
+        *,
+        ::before,
+        ::after {
+            box-sizing: border-box;
+        }
+
+
+        html {
+            -moz-tab-size: 4;
+            -o-tab-size: 4;
+            tab-size: 4;
+        }
+
+        html {
+            line-height: 1.15;
+            /* 1 */
+            -webkit-text-size-adjust: 100%;
+            /* 2 */
+        }
+
+        /*
+Sections
+========
+*/
+
+
+        body {
+            margin: 0;
+        }
+
+
+        body {
+            font-family: system-ui, -apple-system, 
+            'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+        }
+
+
+
+        hr {
+            height: 0;
+            /* 1 */
+            color: inherit;
+            /* 2 */
+        }
+
+        /*
+Text-level semantics
+====================
+*/
+
+
+        abbr[title] {
+            -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted;
+        }
+
+
+        b,
+        strong {
+            font-weight: bolder;
+        }
+
+        code,
+        kbd,
+        samp,
+        pre {
+            font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+            /* 1 */
+            font-size: 1em;
+            /* 2 */
+        }
+
+
+        small {
+            font-size: 80%;
+        }
+
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+
+        sub {
+            bottom: -0.25em;
+        }
+
+        sup {
+            top: -0.5em;
+        }
+
+        /*
+
+        table {
+            text-indent: 0;
+            /* 1 */
+            border-color: inherit;
+            /* 2 */
+        }
+
+        /*
+Forms
+=====
+*/
+
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit;
+            /* 1 */
+            font-size: 100%;
+            /* 1 */
+            line-height: 1.15;
+            /* 1 */
+            margin: 0;
+            /* 2 */
+        }
+
+
+        button,
+        select {
+            /* 1 */
+            text-transform: none;
+        }
+
+
+        button,
+        [type='button'],
+        [type='reset'] {
+            -webkit-appearance: button;
+        }
+
+
+
+
+        legend {
+            padding: 0;
+        }
+
+
+        progress {
+            vertical-align: baseline;
+        }
+
+
+
+        summary {
+            display: list-item;
+        }
+
+
+        blockquote,
+        dl,
+        dd,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        figure,
+        p,
+        pre {
+            margin: 0;
+        }
+
+        button {
+            background-color: transparent;
+            background-image: none;
+        }
+
+        fieldset {
+            margin: 0;
+            padding: 0;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        html {
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            /* 1 */
+            line-height: 1.5;
+            /* 2 */
+        }
+
+        body {
+            font-family: inherit;
+            line-height: inherit;
+        }
+
+
+        *,
+        ::before,
+        ::after {
+            box-sizing: border-box;
+            /* 1 */
+            border-width: 0;
+            /* 2 */
+            border-style: solid;
+            /* 2 */
+            border-color: currentColor;
+            /* 2 */
+        }
+
+
+        hr {
+            border-top-width: 1px;
+        }
+
+        img {
+            border-style: solid;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input::-moz-placeholder,
+        textarea::-moz-placeholder {
+            opacity: 1;
+            color: #9ca3af;
+        }
+
+        input:-ms-input-placeholder,
+        textarea:-ms-input-placeholder {
+            opacity: 1;
+            color: #9ca3af;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            opacity: 1;
+            color: #9ca3af;
+        }
+
+        button,
+        [role="button"] {
+            cursor: pointer;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: inherit;
+        }
+
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            padding: 0;
+            line-height: inherit;
+            color: inherit;
+        }
+
+
+        pre,
+        code,
+        kbd,
+        samp {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        }
+
+
+        img,
+        svg,
+        video,
+        canvas,
+        audio,
+        iframe,
+        embed,
+        object {
+            display: block;
+            /* 1 */
+            vertical-align: middle;
+            /* 2 */
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        *,
+        ::before,
+        ::after {
+            --tw-border-opacity: 1;
+            border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+        }
+
+        .fixed {
+            position: fixed;
+        }
+
+        .absolute {
+            position: absolute;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .sticky {
+            position: sticky;
+        }
+
+        .top-0 {
+            top: 0px;
+        }
+
+        .right-0 {
+            right: 0px;
+        }
+
+        .bottom-0 {
+            bottom: 0px;
+        }
+
+        .bottom-4 {
+            bottom: 1rem;
+        }
+
+        .left-0 {
+            left: 0px;
+        }
+
+        .z-10 {
+            z-index: 10;
+        }
+
+        .z-50 {
+            z-index: 50;
+        }
+
+        .my-auto {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .mt-auto {
+            margin-top: auto;
+        }
+
+        .mb-10 {
+            margin-bottom: 2.5rem;
+        }
+
+        .ml-auto {
+            margin-left: auto;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .table {
+            display: table;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .h-6 {
+            height: 1.5rem;
+        }
+
+        .h-8 {
+            height: 2rem;
+        }
+
+        .h-10 {
+            height: 2.5rem;
+        }
+
+        .h-12 {
+            height: 3rem;
+        }
+
+        .h-14 {
+            height: 3.5rem;
+        }
+
+        .h-16 {
+            height: 4rem;
+        }
+
+        .h-24 {
+            height: 6rem;
+        }
+
+        .h-80 {
+            height: 20rem;
+        }
+
+        .h-96 {
+            height: 24rem;
+        }
+
+        .h-5\/6 {
+            height: 83.333333%;
+        }
+
+        .h-full {
+            height: 100%;
+        }
+
+        .h-screen {
+            height: 100vh;
+        }
+
+        .min-h-screen {
+            min-height: 100vh;
+        }
+
+        .w-6 {
+            width: 1.5rem;
+        }
+
+        .w-8 {
+            width: 2rem;
+        }
+
+        .w-10 {
+            width: 2.5rem;
+        }
+
+        .w-14 {
+            width: 3.5rem;
+        }
+
+        .w-16 {
+            width: 4rem;
+        }
+
+        .w-20 {
+            width: 5rem;
+        }
+
+        .w-24 {
+            width: 6rem;
+        }
+
+        .w-32 {
+            width: 8rem;
+        }
+
+        .w-36 {
+            width: 9rem;
+        }
+
+        .w-40 {
+            width: 10rem;
+        }
+
+        .w-44 {
+            width: 11rem;
+        }
+
+        .w-60 {
+            width: 15rem;
+        }
+
+        .w-72 {
+            width: 18rem;
+        }
+
+        .w-96 {
+            width: 24rem;
+        }
+
+        .w-4\/6 {
+            width: 66.666667%;
+        }
+
+        .w-5\/12 {
+            width: 41.666667%;
+        }
+
+        .w-8\/12 {
+            width: 66.666667%;
+        }
+
+        .w-10\/12 {
+            width: 83.333333%;
+        }
+
+        .w-11\/12 {
+            width: 91.666667%;
+        }
+
+        .w-full {
+            width: 100%;
+        }
+
+        .w-screen {
+            width: 100vw;
+        }
+
+        .max-w-sm {
+            max-width: 24rem;
+        }
+
+        .flex-1 {
+            flex: 1 1 0%;
+        }
+
+        .flex-shrink-0 {
+            flex-shrink: 0;
+        }
+
+        .transform {
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }
+
+        @-webkit-keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes ping {
+            75%,
+            100% {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+
+        @keyframes ping {
+            75%,
+            100% {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+
+        @-webkit-keyframes pulse {
+            50% {
+                opacity: .5;
+            }
+        }
+
+        @keyframes pulse {
+            50% {
+                opacity: .5;
+            }
+        }
+
+        @-webkit-keyframes bounce {
+            0%,
+            100% {
+                transform: translateY(-25%);
+                -webkit-animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+                animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+            }
+            50% {
+                transform: none;
+                -webkit-animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+                animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            }
+        }
+
+        @keyframes bounce {
+            0%,
+            100% {
+                transform: translateY(-25%);
+                -webkit-animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+                animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+            }
+            50% {
+                transform: none;
+                -webkit-animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+                animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            }
+        }
+
+        .cursor-pointer {
+            cursor: pointer;
+        }
+
+        .flex-row {
+            flex-direction: row;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .place-items-center {
+            place-items: center;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .justify-start {
+            justify-content: flex-start;
+        }
+
+        .justify-end {
+            justify-content: flex-end;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .justify-around {
+            justify-content: space-around;
+        }
+
+        .gap-0 {
+            gap: 0px;
+        }
+
+        .gap-1 {
+            gap: 0.25rem;
+        }
+
+        .gap-2 {
+            gap: 0.5rem;
+        }
+
+        .gap-3 {
+            gap: 0.75rem;
+        }
+
+        .gap-4 {
+            gap: 1rem;
+        }
+
+        .gap-6 {
+            gap: 1.5rem;
+        }
+
+        .gap-8 {
+            gap: 2rem;
+        }
+
+        .gap-12 {
+            gap: 3rem;
+        }
+
+        .gap-0\.5 {
+            gap: 0.125rem;
+        }
+
+        .gap-1\.5 {
+            gap: 0.375rem;
+        }
+
+        .place-self-center {
+            place-self: center;
+        }
+
+        .self-end {
+            align-self: flex-end;
+        }
+
+        .self-center {
+            align-self: center;
+        }
+
+        .justify-self-center {
+            justify-self: center;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .overflow-scroll {
+            overflow: scroll;
+        }
+
+        .overflow-y-auto {
+            overflow-y: auto;
+        }
+
+        .overflow-x-hidden {
+            overflow-x: hidden;
+        }
+
+        .overflow-y-scroll {
+            overflow-y: scroll;
+        }
+
+        .break-words {
+            overflow-wrap: break-word;
+        }
+
+        .rounded-xl {
+            border-radius: 0.75rem;
+        }
+
+        .rounded-full {
+            border-radius: 9999px;
+        }
+
+        .rounded-tr-xl {
+            border-top-right-radius: 0.75rem;
+        }
+
+        .rounded-bl-xl {
+            border-bottom-left-radius: 0.75rem;
+        }
+
+        .border-2 {
+            border-width: 2px;
+        }
+
+        .border {
+            border-width: 1px;
+        }
+
+        .border-r-4 {
+            border-right-width: 4px;
+        }
+
+        .border-r {
+            border-right-width: 1px;
+        }
+
+        .border-none {
+            border-style: none;
+        }
+
+        .border-black {
+            --tw-border-opacity: 1;
+            border-color: rgba(0, 0, 0, var(--tw-border-opacity));
+        }
+
+        .border-gray-900 {
+            --tw-border-opacity: 1;
+            border-color: rgba(17, 24, 39, var(--tw-border-opacity));
+        }
+
+        .border-red-600 {
+            --tw-border-opacity: 1;
+            border-color: rgba(220, 38, 38, var(--tw-border-opacity));
+        }
+
+        .border-yellow-600 {
+            --tw-border-opacity: 1;
+            border-color: rgba(217, 119, 6, var(--tw-border-opacity));
+        }
+
+        .border-green-600 {
+            --tw-border-opacity: 1;
+            border-color: rgba(5, 150, 105, var(--tw-border-opacity));
+        }
+
+        .border-blue-900 {
+            --tw-border-opacity: 1;
+            border-color: rgba(30, 58, 138, var(--tw-border-opacity));
+        }
+
+        .bg-black {
+            --tw-bg-opacity: 1;
+            background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+        }
+
+        .bg-gray-800 {
+            --tw-bg-opacity: 1;
+            background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+        }
+
+        .bg-gray-900 {
+            --tw-bg-opacity: 1;
+            background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+        }
+
+        .bg-red-600 {
+            --tw-bg-opacity: 1;
+            background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+        }
+
+        .bg-green-600 {
+            --tw-bg-opacity: 1;
+            background-color: rgba(5, 150, 105, var(--tw-bg-opacity));
+        }
+
+        .bg-blue-900 {
+            --tw-bg-opacity: 1;
+            background-color: rgba(30, 58, 138, var(--tw-bg-opacity));
+        }
+
+        .bg-opacity-50 {
+            --tw-bg-opacity: 0.5;
+        }
+
+        .bg-opacity-75 {
+            --tw-bg-opacity: 0.75;
+        }
+
+        .p-0 {
+            padding: 0px;
+        }
+
+        .p-1 {
+            padding: 0.25rem;
+        }
+
+        .p-2 {
+            padding: 0.5rem;
+        }
+
+        .p-4 {
+            padding: 1rem;
+        }
+
+        .p-6 {
+            padding: 1.5rem;
+        }
+
+        .p-8 {
+            padding: 2rem;
+        }
+
+        .p-0\.5 {
+            padding: 0.125rem;
+        }
+
+        .px-1 {
+            padding-left: 0.25rem;
+            padding-right: 0.25rem;
+        }
+
+        .px-2 {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .py-0 {
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .py-4 {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .py-14 {
+            padding-top: 3.5rem;
+            padding-bottom: 3.5rem;
+        }
+
+        .pb-48 {
+            padding-bottom: 12rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-xs {
+            font-size: 0.75rem;
+            line-height: 1rem;
+        }
+
+        .text-sm {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+        }
+
+        .text-lg {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+
+        .text-3xl {
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+        }
+
+        .text-4xl {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+        }
+
+        .font-normal {
+            font-weight: 400;
+        }
+
+        .font-semibold {
+            font-weight: 600;
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        .text-white {
+            --tw-text-opacity: 1;
+            color: rgba(255, 255, 255, var(--tw-text-opacity));
+        }
+
+        .text-gray-200 {
+            --tw-text-opacity: 1;
+            color: rgba(229, 231, 235, var(--tw-text-opacity));
+        }
+
+        .text-gray-300 {
+            --tw-text-opacity: 1;
+            color: rgba(209, 213, 219, var(--tw-text-opacity));
+        }
+
+        .text-gray-400 {
+            --tw-text-opacity: 1;
+            color: rgba(156, 163, 175, var(--tw-text-opacity));
+        }
+
+        .text-red-600 {
+            --tw-text-opacity: 1;
+            color: rgba(220, 38, 38, var(--tw-text-opacity));
+        }
+
+        .text-green-600 {
+            --tw-text-opacity: 1;
+            color: rgba(5, 150, 105, var(--tw-text-opacity));
+        }
+
+        .text-blue-600 {
+            --tw-text-opacity: 1;
+            color: rgba(37, 99, 235, var(--tw-text-opacity));
+        }
+
+        .text-blue-900 {
+            --tw-text-opacity: 1;
+            color: rgba(30, 58, 138, var(--tw-text-opacity));
+        }
+
+        .text-pink-600 {
+            --tw-text-opacity: 1;
+            color: rgba(219, 39, 119, var(--tw-text-opacity));
+        }
+
+        .line-through {
+            text-decoration: line-through;
+        }
+
+        .opacity-40 {
+            opacity: 0.4;
+        }
+
+        .opacity-50 {
+            opacity: 0.5;
+        }
+
+        *,
+        ::before,
+        ::after {
+            --tw-shadow: 0 0 #0000;
+        }
+
+        *,
+        ::before,
+        ::after {
+            --tw-ring-inset: var(--tw-empty, /*!*/
+            /*!*/
+            );
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgba(59, 130, 246, 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+        }
+
+        .filter {
+            --tw-blur: var(--tw-empty, /*!*/
+            /*!*/
+            );
+            --tw-brightness: var(--tw-empty, /*!*/
+            /*!*/
+            );
+            --tw-contrast: var(--tw-empty, /*!*/
+            /*!*/
+            );
+            --tw-grayscale: var(--tw-empty, /*!*/
+            /*!*/
+            );
+            --tw-hue-rotate: var(--tw-empty, /*!*/
+            /*!*/
+            );
+            --tw-invert: var(--tw-empty, /*!*/
+            /*!*/
+            );
+            --tw-saturate: var(--tw-empty, /*!*/
+            /*!*/
+            );
+            --tw-sepia: var(--tw-empty, /*!*/
+            /*!*/
+            );
+            --tw-drop-shadow: var(--tw-empty, /*!*/
+            /*!*/
+            );
+            filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+        }
+
+        .drop-shadow-lg {
+            --tw-drop-shadow: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.04)) drop-shadow(0 4px 3px rgba(0, 0, 0, 0.1));
+        }
+
+        .transition {
+            transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+            transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+            transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+
+        .ease-out {
+            transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+
+        @media (min-width: 640px) {
+            .sm\:h-44 {
+                height: 11rem;
+            }
+            .sm\:w-44 {
+                width: 11rem;
+            }
+            .sm\:w-8\/12 {
+                width: 66.666667%;
+            }
+            .sm\:flex-row {
+                flex-direction: row;
+            }
+            .sm\:p-2 {
+                padding: 0.5rem;
+            }
+            .sm\:p-14 {
+                padding: 3.5rem;
+            }
+            .sm\:px-8 {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+            .sm\:text-sm {
+                font-size: 0.875rem;
+                line-height: 1.25rem;
+            }
+            .sm\:text-base {
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+            .sm\:text-2xl {
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .md\:mb-24 {
+                margin-bottom: 6rem;
+            }
+            .md\:flex {
+                display: flex;
+            }
+            .md\:hidden {
+                display: none;
+            }
+            .md\:w-4\/12 {
+                width: 33.333333%;
+            }
+            .md\:w-6\/12 {
+                width: 50%;
+            }
+            .md\:gap-2 {
+                gap: 0.5rem;
+            }
+            .md\:gap-4 {
+                gap: 1rem;
+            }
+            .md\:p-2 {
+                padding: 0.5rem;
+            }
+            .md\:text-base {
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+            .md\:text-lg {
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+            }
+            .md\:text-xl {
+                font-size: 1.25rem;
+                line-height: 1.75rem;
+            }
+            .md\:text-3xl {
+                font-size: 1.875rem;
+                line-height: 2.25rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .lg\:h-60 {
+                height: 15rem;
+            }
+            .lg\:w-60 {
+                width: 15rem;
+            }
+        }
+
+        @media (min-width: 1280px) {}
+
+        @media (min-width: 1536px) {}
+
+        .button {
+            transition: .25s
+        }
+
+        .button:hover {
+            box-shadow: 0 .5em .5em -.4em #000;
+            transform: translateY(-.15em)
+        }
+
+        .button:disabled {
+            opacity: .5
+        }
+
+        .button:disabled:hover {
+            box-shadow: none;
+            transform: none
+        }
+
+        button:focus,
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none
+        }
+
+        input {
+            border-radius: 0.75rem;
+            --tw-bg-opacity: 1;
+            background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+            padding: 0.5rem
+        }
+
+        .toast {
+            border-radius: 0.75rem !important
+        }
+
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            outline: 0;
+            box-shadow: none;
+            border: 0 !important;
+            border-radius: 0.75rem !important;
+            --tw-bg-opacity: 1 !important;
+            background-color: rgba(31, 41, 55, var(--tw-bg-opacity)) !important;
+            padding: 0.5rem !important;
+            background-image: none;
+            color: #fff;
+            cursor: pointer
+        }
+
+        select::-ms-expand {
+            display: none
+        }
+
+        html {
+            font-size: 16px;
+            word-spacing: 1px;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            box-sizing: border-box
+        }
+
+        #__layout,
+        #__nuxt,
+        body,
+        html {
+            height: 100%
+        }
+
+        body {
+            overflow-y: scroll;
+            background-color: #0c101a;
+            --tw-text-opacity: 1;
+            color: rgba(243, 244, 246, var(--tw-text-opacity))
+        }
+
+        *,
+        :after,
+        :before {
+            box-sizing: border-box;
+            margin: 0
+        }
+
+        .disable-scroll {
+            -ms-overflow-style: none;
+            scrollbar-width: none
+        }
+
+        .disable-scroll::-webkit-scrollbar {
+            display: none
+        }
+
+        fieldset[disabled] .multiselect {
+            pointer-events: none
+        }
+
+        .multiselect__spinner {
+            position: absolute;
+            right: 1px;
+            top: 1px;
+            width: 48px;
+            height: 35px;
+            background: #fff;
+            display: block
+        }
+
+        .multiselect__spinner:after,
+        .multiselect__spinner:before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            margin: -8px 0 0 -8px;
+            width: 16px;
+            height: 16px;
+            border-radius: 100%;
+            border: 2px solid transparent;
+            border-top-color: #41b883;
+            box-shadow: 0 0 0 1px transparent
+        }
+
+        .multiselect__spinner:before {
+            -webkit-animation: spinning 2.4s cubic-bezier(.41, .26, .2, .62);
+            animation: spinning 2.4s cubic-bezier(.41, .26, .2, .62);
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite
+        }
+
+        .multiselect__spinner:after {
+            -webkit-animation: spinning 2.4s cubic-bezier(.51, .09, .21, .8);
+            animation: spinning 2.4s cubic-bezier(.51, .09, .21, .8);
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite
+        }
+
+        .multiselect__loading-enter-active,
+        .multiselect__loading-leave-active {
+            transition: opacity .4s ease-in-out;
+            opacity: 1
+        }
+
+        .multiselect__loading-enter,
+        .multiselect__loading-leave-active {
+            opacity: 0
+        }
+
+        .multiselect,
+        .multiselect__input,
+        .multiselect__single {
+            font-family: inherit;
+            font-size: 16px;
+            touch-action: manipulation
+        }
+
+        .multiselect {
+            box-sizing: content-box;
+            display: block;
+            position: relative;
+            width: 100%;
+            min-height: 40px;
+            text-align: left;
+            color: #35495e
+        }
+
+        .multiselect * {
+            box-sizing: border-box
+        }
+
+        .multiselect:focus {
+            outline: none
+        }
+
+        .multiselect--disabled {
+            background: #ededed;
+            pointer-events: none;
+            opacity: .6
+        }
+
+        .multiselect--active {
+            z-index: 50
+        }
+
+        .multiselect--active:not(.multiselect--above) .multiselect__current,
+        .multiselect--active:not(.multiselect--above) .multiselect__input,
+        .multiselect--active:not(.multiselect--above) .multiselect__tags {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0
+        }
+
+        .multiselect--active .multiselect__select {
+            transform: rotate(180deg)
+        }
+
+        .multiselect--above.multiselect--active .multiselect__current,
+        .multiselect--above.multiselect--active .multiselect__input,
+        .multiselect--above.multiselect--active .multiselect__tags {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0
+        }
+
+        .multiselect__input,
+        .multiselect__single {
+            position: relative;
+            display: inline-block;
+            min-height: 20px;
+            line-height: 20px;
+            border: none;
+            border-radius: 5px;
+            background: #fff;
+            padding: 0 0 0 5px;
+            width: 100%;
+            transition: border .1s ease;
+            box-sizing: border-box;
+            margin-bottom: 8px;
+            vertical-align: top
+        }
+
+        .multiselect__input:-ms-input-placeholder {
+            color: #35495e
+        }
+
+        .multiselect__input::-moz-placeholder {
+            color: #35495e
+        }
+
+        .multiselect__input::placeholder {
+            color: #35495e
+        }
+
+        .multiselect__tag~.multiselect__input,
+        .multiselect__tag~.multiselect__single {
+            width: auto
+        }
+
+        .multiselect__input:hover,
+        .multiselect__single:hover {
+            border-color: #cfcfcf
+        }
+
+        .multiselect__input:focus,
+        .multiselect__single:focus {
+            border-color: #a8a8a8;
+            outline: none
+        }
+
+        .multiselect__single {
+            padding-left: 5px;
+            margin-bottom: 8px
+        }
+
+        .multiselect__tags-wrap {
+            display: inline
+        }
+
+        .multiselect__tags {
+            min-height: 40px;
+            display: block;
+            padding: 8px 40px 0 8px;
+            border-radius: 5px;
+            border: 1px solid #e8e8e8;
+            background: #fff;
+            font-size: 14px
+        }
+
+        .multiselect__tag {
+            position: relative;
+            display: inline-block;
+            padding: 4px 26px 4px 10px;
+            border-radius: 5px;
+            margin-right: 10px;
+            color: #fff;
+            line-height: 1;
+            background: #41b883;
+            margin-bottom: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 100%;
+            text-overflow: ellipsis
+        }
+
+        .multiselect__tag-icon {
+            cursor: pointer;
+            margin-left: 7px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            font-weight: 700;
+            font-style: normal;
+            width: 22px;
+            text-align: center;
+            line-height: 22px;
+            transition: all .2s ease;
+            border-radius: 5px
+        }
+
+        .multiselect__tag-icon:after {
+            content: "\D7";
+            color: #266d4d;
+            font-size: 14px
+        }
+
+        .multiselect__tag-icon:focus,
+        .multiselect__tag-icon:hover {
+            background: #369a6e
+        }
+
+        .multiselect__tag-icon:focus:after,
+        .multiselect__tag-icon:hover:after {
+            color: #fff
+        }
+
+        .multiselect__current {
+            min-height: 40px;
+            overflow: hidden;
+            padding: 8px 30px 0 12px;
+            white-space: nowrap;
+            border-radius: 5px;
+            border: 1px solid #e8e8e8
+        }
+
+        .multiselect__current,
+        .multiselect__select {
+            line-height: 16px;
+            box-sizing: border-box;
+            display: block;
+            margin: 0;
+            text-decoration: none;
+            cursor: pointer
+        }
+
+        .multiselect__select {
+            position: absolute;
+            width: 40px;
+            height: 38px;
+            right: 1px;
+            top: 1px;
+            padding: 4px 8px;
+            text-align: center;
+            transition: transform .2s ease
+        }
+
+        .multiselect__select:before {
+            position: relative;
+            right: 0;
+            top: 65%;
+            color: #999;
+            margin-top: 4px;
+            border-color: #999 transparent transparent;
+            border-style: solid;
+            border-width: 5px 5px 0;
+            content: ""
+        }
+
+        .multiselect__placeholder {
+            color: #adadad;
+            display: inline-block;
+            margin-bottom: 10px;
+            padding-top: 2px
+        }
+
+        .multiselect--active .multiselect__placeholder {
+            display: none
+        }
+
+        .multiselect__content-wrapper {
+            position: absolute;
+            display: block;
+            background: #fff;
+            width: 100%;
+            max-height: 240px;
+            overflow: auto;
+            border: 1px solid #e8e8e8;
+            border-top: none;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            z-index: 50;
+            -webkit-overflow-scrolling: touch
+        }
+
+        .multiselect__content {
+            list-style: none;
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            min-width: 100%;
+            vertical-align: top
+        }
+
+        .multiselect--above .multiselect__content-wrapper {
+            bottom: 100%;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom: none;
+            border-top: 1px solid #e8e8e8
+        }
+
+        .multiselect__content::webkit-scrollbar {
+            display: none
+        }
+
+        .multiselect__element {
+            display: block
+        }
+
+        .multiselect__option {
+            display: block;
+            padding: 12px;
+            min-height: 40px;
+            line-height: 16px;
+            text-decoration: none;
+            text-transform: none;
+            vertical-align: middle;
+            position: relative;
+            cursor: pointer;
+            white-space: nowrap
+        }
+
+        .multiselect__option:after {
+            top: 0;
+            right: 0;
+            position: absolute;
+            line-height: 40px;
+            padding-right: 12px;
+            padding-left: 20px;
+            font-size: 13px
+        }
+
+        .multiselect__option--highlight {
+            background: #41b883;
+            outline: none;
+            color: #fff
+        }
+
+        .multiselect__option--highlight:after {
+            content: attr(data-select);
+            background: #41b883;
+            color: #fff
+        }
+
+        .multiselect__option--selected {
+            background: #f3f3f3;
+            color: #35495e;
+            font-weight: 700
+        }
+
+        .multiselect__option--selected:after {
+            content: attr(data-selected);
+            color: silver
+        }
+
+        .multiselect__option--selected.multiselect__option--highlight {
+            background: #ff6a6a;
+            color: #fff
+        }
+
+        .multiselect__option--selected.multiselect__option--highlight:after {
+            background: #ff6a6a;
+            content: attr(data-deselect);
+            color: #fff
+        }
+
+        .multiselect--disabled .multiselect__current,
+        .multiselect--disabled .multiselect__select {
+            background: #ededed;
+            color: #a6a6a6
+        }
+
+        .multiselect__option--disabled {
+            background: #ededed !important;
+            color: #a6a6a6 !important;
+            cursor: text;
+            pointer-events: none
+        }
+
+        .multiselect__option--group {
+            background: #ededed;
+            color: #35495e
+        }
+
+        .multiselect__option--group.multiselect__option--highlight {
+            background: #35495e;
+            color: #fff
+        }
+
+        .multiselect__option--group.multiselect__option--highlight:after {
+            background: #35495e
+        }
+
+        .multiselect__option--disabled.multiselect__option--highlight {
+            background: #dedede
+        }
+
+        .multiselect__option--group-selected.multiselect__option--highlight {
+            background: #ff6a6a;
+            color: #fff
+        }
+
+        .multiselect__option--group-selected.multiselect__option--highlight:after {
+            background: #ff6a6a;
+            content: attr(data-deselect);
+            color: #fff
+        }
+
+        .multiselect-enter-active,
+        .multiselect-leave-active {
+            transition: all .15s ease
+        }
+
+        .multiselect-enter,
+        .multiselect-leave-active {
+            opacity: 0
+        }
+
+        .multiselect__strong {
+            margin-bottom: 8px;
+            line-height: 20px;
+            display: inline-block;
+            vertical-align: top
+        }
+
+        [dir=rtl] .multiselect {
+            text-align: right
+        }
+
+        [dir=rtl] .multiselect__select {
+            right: auto;
+            left: 1px
+        }
+
+        [dir=rtl] .multiselect__tags {
+            padding: 8px 8px 0 40px
+        }
+
+        [dir=rtl] .multiselect__content {
+            text-align: right
+        }
+
+        [dir=rtl] .multiselect__option:after {
+            right: auto;
+            left: 0
+        }
+
+        [dir=rtl] .multiselect__clear {
+            right: auto;
+            left: 12px
+        }
+
+        [dir=rtl] .multiselect__spinner {
+            right: auto;
+            left: 1px
+        }
+
+        @-webkit-keyframes spinning {
+            0% {
+                transform: rotate(0)
+            }
+            to {
+                transform: rotate(2turn)
+            }
+        }
+
+        @keyframes spinning {
+            0% {
+                transform: rotate(0)
+            }
+            to {
+                transform: rotate(2turn)
+            }
+        }
+
+        .nuxt-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            width: 0;
+            opacity: 1;
+            transition: width .1s, opacity .4s;
+            background-color: #000;
+            z-index: 999999
+        }
+
+        .nuxt-progress.nuxt-progress-notransition {
+            transition: none
+        }
+
+        .nuxt-progress-failed {
+            background-color: red
+        }
+
+        .navbar>a[data-v-29a0bec5] {
+            transition: .25s
+        }
+
+        @-webkit-keyframes fromRight-data-v-29a0bec5 {
+            0% {
+                transform: translateX(-100%)
+            }
+            to {
+                transform: translateX(0)
+            }
+        }
+
+        @keyframes fromRight-data-v-29a0bec5 {
+            0% {
+                transform: translateX(-100%)
+            }
+            to {
+                transform: translateX(0)
+            }
+        }
+
+        .navbar-items[data-v-29a0bec5] {
+            -webkit-animation: fromRight-data-v-29a0bec5 .3s ease-out 0s 1;
+            animation: fromRight-data-v-29a0bec5 .3s ease-out 0s 1
+        }
+
+        .nuxt-link-exact-active[data-v-29a0bec5],
+        .tab[data-v-29a0bec5]:hover {
+            box-shadow: 0 .5em .5em -.4em #000;
+            transform: translateY(-.15em)
+        }
+
+        .last-tab[data-v-29a0bec5] {
+            position: absolute;
+            right: 0px
+        }
+
+        #main-rect[data-v-5381c114],
+        .rect[data-v-5381c114] {
+            opacity: 0
+        }
+
+        body[data-v-5381c114] {
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='304' height='304'%3E%3Cpath fill='%23fff' fill-opacity='.14' d='M44.1 224a5 5 0 110 2H0v-2h44.1zm160 48a5 5 0 110 2H82v-2h122.1zm57.8-46a5 5 0 110-2H304v2h-42.1zm0 16a5 5 0 110-2H304v2h-42.1zm6.2-114a5 5 0 110 2h-86.2a5 5 0 110-2h86.2zm-256-48a5 5 0 110 2H0v-2h12.1zm185.8 34a5 5 0 110-2h86.2a5 5 0 110 2h-86.2zM258 12.1a5 5 0 11-2 0V0h2v12.1zm-64 208a5 5 0 11-2 0v-54.2a5 5 0 112 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 112 0zm16 16V64h46v2h-48V37.9a5 5 0 112 0zm-128 96V208h16v12.1a5 5 0 11-2 0V210h-16v-76.1a5 5 0 112 0zm-5.9-21.9a5 5 0 110 2H114v48H85.9a5 5 0 110-2H112v-48h12.1zm-6.2 130a5 5 0 110-2H176v-74.1a5 5 0 112 0V242h-60.1zm-16-64a5 5 0 110-2H114v48h10.1a5 5 0 110 2H112v-48h-10.1zM66 284.1a5 5 0 11-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 110 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 110-2H274v44.1a5 5 0 11-2 0V146h-10.1zm-64 96a5 5 0 110-2H208v-80h16v-14h-42.1a5 5 0 110-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 110 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 110-2H96v-42.1a5 5 0 112 0zM53.9 34a5 5 0 110-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 110-2H80V64h32V37.9a5 5 0 112 0zM101.9 82a5 5 0 110-2H128V37.9a5 5 0 112 0V82h-28.1zm16-64a5 5 0 110-2H146v44.1a5 5 0 11-2 0V18h-26.1zm102.2 270a5 5 0 110 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 112 0zM53.9 18a5 5 0 110-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 110-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 01-9.8-2h2.07a3 3 0 105.66 0H178v34h-18V21.9a5 5 0 112 0V32h14V2h-58.1zm0 96a5 5 0 110-2H137l32-32h39V21.9a5 5 0 112 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 11-2 0v-76.51L175.59 80H224V21.9a5 5 0 112 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 11-2 0v-99.51L184.59 96H300.1a5 5 0 013.9-3.9v2.07a3 3 0 000 5.66v2.07a5 5 0 01-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 11-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 110 2H0v-65.41l48-48V53.9a5 5 0 112 0zm-16 16v19.51l-34 34v-2.82l32-32V69.9a5 5 0 112 0zM12.1 32a5 5 0 110 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 110-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 110-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 110-2H64v-22.59L40.59 194H21.9a5 5 0 110-2h19.51L66 216.59V242H53.9zm150.2 14a5 5 0 110 2H96v-56.6L56.6 162H37.9a5 5 0 110-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 110-2H80v-46.59L48.59 178H21.9a5 5 0 110-2h27.51L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 013.9 3.9H3.83A3 3 0 000 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 016 97a5 5 0 01-6 4.9v-2.07a3 3 0 100-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 00-5.66 0h-2.07a5 5 0 019.8 0zM5.9 0A5.02 5.02 0 010 5.9V3.83A3 3 0 003.83 0H5.9zm294.2 0h2.07A3 3 0 00304 3.83V5.9a5 5 0 01-3.9-5.9zm3.9 300.1v2.07a3 3 0 00-1.83 1.83h-2.07a5 5 0 013.9-3.9zM97 100a3 3 0 100-6 3 3 0 000 6zm0-16a3 3 0 100-6 3 3 0 000 6zm16 16a3 3 0 100-6 3 3 0 000 6zm16 16a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm-48 32a3 3 0 100-6 3 3 0 000 6zm16 16a3 3 0 100-6 3 3 0 000 6zm32 48a3 3 0 100-6 3 3 0 000 6zm-16 16a3 3 0 100-6 3 3 0 000 6zm32-16a3 3 0 100-6 3 3 0 000 6zm0-32a3 3 0 100-6 3 3 0 000 6zm16 32a3 3 0 100-6 3 3 0 000 6zm32 16a3 3 0 100-6 3 3 0 000 6zm0-16a3 3 0 100-6 3 3 0 000 6zm-16-64a3 3 0 100-6 3 3 0 000 6zm16 0a3 3 0 100-6 3 3 0 000 6zm16 96a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm16 16a3 3 0 100-6 3 3 0 000 6zm16-144a3 3 0 100-6 3 3 0 000 6zm0 32a3 3 0 100-6 3 3 0 000 6zm16-32a3 3 0 100-6 3 3 0 000 6zm16-16a3 3 0 100-6 3 3 0 000 6zm-96 0a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm16-32a3 3 0 100-6 3 3 0 000 6zm96 0a3 3 0 100-6 3 3 0 000 6zm-16-64a3 3 0 100-6 3 3 0 000 6zm16-16a3 3 0 100-6 3 3 0 000 6zm-32 0a3 3 0 100-6 3 3 0 000 6zm0-16a3 3 0 100-6 3 3 0 000 6zm-16 0a3 3 0 100-6 3 3 0 000 6zm-16 0a3 3 0 100-6 3 3 0 000 6zm-16 0a3 3 0 100-6 3 3 0 000 6zM49 36a3 3 0 100-6 3 3 0 000 6zm-32 0a3 3 0 100-6 3 3 0 000 6zm32 16a3 3 0 100-6 3 3 0 000 6zM33 68a3 3 0 100-6 3 3 0 000 6zm16-48a3 3 0 100-6 3 3 0 000 6zm0 240a3 3 0 100-6 3 3 0 000 6zm16 32a3 3 0 100-6 3 3 0 000 6zm-16-64a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm-16-32a3 3 0 100-6 3 3 0 000 6zm80-176a3 3 0 100-6 3 3 0 000 6zm16 0a3 3 0 100-6 3 3 0 000 6zm-16-16a3 3 0 100-6 3 3 0 000 6zm32 48a3 3 0 100-6 3 3 0 000 6zm16-16a3 3 0 100-6 3 3 0 000 6zm0-32a3 3 0 100-6 3 3 0 000 6zm112 176a3 3 0 100-6 3 3 0 000 6zm-16 16a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zM17 180a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm0-32a3 3 0 100-6 3 3 0 000 6zm16 0a3 3 0 100-6 3 3 0 000 6zM17 84a3 3 0 100-6 3 3 0 000 6zm32 64a3 3 0 100-6 3 3 0 000 6zm16-16a3 3 0 100-6 3 3 0 000 6z'/%3E%3C/svg%3E")
+        }
+    </style>
+    <script async src='/cdn-cgi/challenge-platform/h/b/scripts/invisible.js'></script>
+</head>
+
+<body>
+    <div data-server-rendered="true" id="__nuxt">
+        <!---->
+        <div id="__layout">
+            <div data-v-29a0bec5>
+                <div class="header mb-10" data-v-29a0bec5>
+                        
+                    <div class="
+        navbar-menu
+        w-full
+        md:hidden
+        flex flex-col
+        drop-shadow-lg
+        py-2
+        bg-gray-800
+      " data-v-29a0bec5>
+                        <div class="flex flex-row justify-between gap-2 z-10" data-v-29a0bec5>
+                            <div class="flex flex-row place-items-center" data-v-29a0bec5><img src="icon.png" class="w-14 h-14" data-v-29a0bec5>
+                                <h2 class="text-xl font-semibold" data-v-29a0bec5>Security Bot</h2>
+                            </div> <button class="p-2" data-v-29a0bec5><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-10 w-10" data-v-29a0bec5><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" data-v-29a0bec5></path></svg></button></div>
+                    </div>
+                    <!---->
+                </div>
+                <div class="flex flex-col place-items-center gap-12 body min-h-screen" data-v-5381c114 data-v-29a0bec5>
+                    <div class="flex flex-col sm:p-14 p-6 justify-center w-full gap-8 md:mb-24" data-v-5381c114>
+                        <div class="flex flex-row place-items-center justify-center" data-v-5381c114><img src="icon.png" class="w-24 h-24 sm:w-44 sm:h-44 lg:w-60 lg:h-60" data-v-5381c114>
+                            <div class="flex flex-col gap-1 md:gap-4" data-v-5381c114>
+                                <h1 class="text-2xl sm:text-2xl md:text-3xl lg:md:text-5xl font-bold" data-v-5381c114>
+                                    Security Bot
+                                </h1>
+                                <p class="text-gray-300 text-xs sm:text-sm md:text-lg" data-v-5381c114>
+                                    Eliminate Unwanted Behavior in Seconds.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row flex-wrap justify-center gap-4 text-cool-gray" data-v-5381c114><a href="https://discord.com/api/oauth2/authorize?client_id=859937907464732722&permissions=8&scope=bot" class="bg-blue-900 text-sm md:p-2 p-1 md:text-base rounded-xl button" data-v-5381c114>Add To Discord</a> <a href="https://discord.gg/vFnxD4FF" class="bg-blue-900 text-sm md:p-2 p-1 md:text-base rounded-xl button" data-v-5381c114>Get Support</a></div>
+                    </div>
+                    <div class="
+      flex flex-row flex-wrap
+      p-6
+      bg-gray-900
+      justify-around
+      w-full
+      gap-4
+    " data-v-5381c114>
+                        <div class="
+        max-w-sm
+        p-4
+        flex flex-col
+        gap-4
+        break-words
+        bg-gray-800
+        rounded-xl
+      " data-v-5381c114>
+                            <h1 class="font-bold text-xl sm:text-2xl text-center text-blue-600" data-v-5381c114>
+                                Powerful Moderation Features
+                            </h1>
+                            <p class="sm:text-sm text-xs" data-v-5381c114>The internet is full of bad apples, people who want to ruin your Discord community by causing chaos and destruction. But not to fear, Security Bot is here. Within seconds, you can lock your Discord server to prevent raiders
+                                from spamming your chat and destroying your community, then take the appropriate actions against unwanted users with Security Bot’s powerful moderation capabilities in seconds. Alternatively, set up auto-moderation so Security
+                                Bot will handle raiders in your sleep.</p>
+                        </div>
+                        <div class="
+        max-w-sm
+        p-4
+        flex flex-col
+        gap-4
+        break-words
+        bg-gray-800
+        rounded-xl
+      " data-v-5381c114>
+                            <h1 class="font-bold text-xl sm:text-2xl text-center text-blue-600" data-v-5381c114>
+                                Anti Nuke Capabilities
+                            </h1>
+                            <p class="sm:text-sm text-xs" data-v-5381c114>We get it. You spend hours setting up the Discord server of your dreams, just for one user to find a simple exploit and destroy your community and prevent staff from taking action. It happens to all of us, and there was no
+                                easy solution until now. Security Bot is one of the few moderation bots with powerful anti nuke capabilities that will prevent raiders from destroying your community in a matter of seconds. Better yet, you can whitelist
+                                staff and trusted members, preventing exploitative measures from disabling community moderators from taking action. When raiders take control of your community, Security Bot will always have your back.</p>
+                        </div>
+                        <div class="
+        max-w-sm
+        p-4
+        flex flex-col
+        gap-4
+        break-words
+        bg-gray-800
+        rounded-xl
+      " data-v-5381c114>
+                            <h1 class="font-bold text-xl sm:text-2xl text-center text-blue-600" data-v-5381c114>
+                                Want something extra?
+                            </h1>
+                            <p class="sm:text-sm text-xs" data-v-5381c114>With the initiation of a simple command, Restore your Discord community by recovering deleted channels, roles &amp; more. And before raiders can do more harm to your Discord server, Security Bot’s powerful anti-spam feature
+                                will prevent bad apples from flooding channels and destroying the community you worked hard to build. All that and more for less than $4 with Security Bot Premium.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-6 justify-center w-full gap-4" data-v-5381c114>
+                        <h2 class="text-center font-semibold text-lg md:text-3xl" data-v-5381c114>
+                            Moderate your Discord Server while you are asleep. That’s why over 100,000 Discord server owners trust Security Bot to eliminate unwanted behavior in seconds.
+                        </h2>
+                        <div class="p-8 flex flex-col place-items-center justify-center h-80" data-v-5381c114><svg id="bl" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" data-v-5381c114><defs data-v-5381c114><style data-v-5381c114>
+            .cls-1 {
+              fill: #3089c5;
+            }
+          </style></defs> <image href="zoomed-icon.png" x="82" y="51" width="348" height="410" data-v-5381c114></image> <rect id="rect-8" x="23" y="381" width="8" height="110" class="cls-1 rect" data-v-5381c114></rect> <rect id="rect-7" x="23" y="484" width="108" height="7" class="cls-1 rect" data-v-5381c114></rect> <rect id="rect-6" x="379" y="482" width="110" height="8" class="cls-1 rect" data-v-5381c114></rect> <rect id="rect-5" x="482" y="382" width="7" height="108" class="cls-1 rect" data-v-5381c114></rect> <rect id="rect-4" x="481" y="22" width="8" height="110" class="cls-1 rect" data-v-5381c114></rect> <rect id="rect-3" x="381" y="22" width="108" height="7" class="cls-1 rect" data-v-5381c114></rect> <rect id="rect-2" x="22" y="23" width="110" height="8" class="cls-1 rect" data-v-5381c114></rect> <rect id="rect-1" x="22" y="23" width="7" height="108" class="cls-1 rect" data-v-5381c114></rect> <rect id="main-rect" x="32" y="22" width="447" height="9" class="cls-1" data-v-5381c114></rect></svg></div>
+                    </div>
+                    <div class="flex flex-col p-6 bg-gray-900 justify-center w-full gap-4" data-v-5381c114>
+                        <h2 class="text-center font-semibold text-lg md:text-3xl text-blue-600" data-v-5381c114>
+                            What actions does Security Bot consider as dangerous?
+                        </h2>
+                        <div class="flex flex-col gap-3" data-v-5381c114>
+                            <div class="actions flex flex-col gap-2" data-v-5381c114>
+                                <div class="flex flex-row place-items-center bg-gray-800 rounded-xl p-2" data-v-5381c114>
+                                    <p class="text-sm text-pink-600" data-v-5381c114>
+                                        Adding bots.
+                                    </p>
+                                    <!---->
+                                </div>
+                                <div class="flex flex-row place-items-center bg-gray-800 rounded-xl p-2" data-v-5381c114>
+                                    <p class="text-sm text-pink-600" data-v-5381c114>
+                                        Pruning members. Free
+                                    </p>
+                                    <!---->
+                                </div>
+                                <div class="flex flex-row place-items-center bg-gray-800 rounded-xl p-2" data-v-5381c114>
+                                    <p class="text-sm text-pink-600" data-v-5381c114>
+                                        Banning members.
+                                    </p>
+                                    <!---->
+                                </div>
+                                <div class="flex flex-row place-items-center bg-gray-800 rounded-xl p-2" data-v-5381c114>
+                                    <p class="text-sm text-pink-600" data-v-5381c114>
+                                        Kicking members.
+                                    </p>
+                                    <!---->
+                                </div>
+                                <div class="flex flex-row place-items-center bg-gray-800 rounded-xl p-2" data-v-5381c114>
+                                    <p class="text-sm text-pink-600" data-v-5381c114>
+                                        Creating and deleting roles.
+                                    </p>
+                                    <!---->
+                                </div>
+                                <div class="flex flex-row place-items-center bg-gray-800 rounded-xl p-2" data-v-5381c114>
+                                    <p class="text-sm text-pink-600" data-v-5381c114>
+                                        Creating and deleting channels.
+                                    </p>
+                                    <!---->
+                                </div>
+                                <div class="flex flex-row place-items-center bg-gray-800 rounded-xl p-2" data-v-5381c114>
+                                    <p class="text-sm text-pink-600" data-v-5381c114>
+                                        Granting dangerous permissions to a role.
+                                    </p>
+                                    <!---->
+                                </div>
+                                <div class="flex flex-row place-items-center bg-gray-800 rounded-xl p-2" data-v-5381c114>
+                                    <p class="text-sm text-pink-600" data-v-5381c114>
+                                        Giving a dangerous role to a member.
+                                    </p>
+                                    <!---->
+                                </div>
+                                <div class="flex flex-row place-items-center bg-gray-800 rounded-xl p-2" data-v-5381c114>
+                                    <p class="text-sm text-green-600" data-v-5381c114>
+                                        Mass mentioning @here and/or @everyone.
+                                    </p> <img src="premium-icon.png" class="w-6 h-6" data-v-5381c114></div>
+                                <div class="flex flex-row place-items-center bg-gray-800 rounded-xl p-2" data-v-5381c114>
+                                    <p class="text-sm text-green-600" data-v-5381c114>
+                                        Creating webhooks.
+                                    </p> <img src="premium-icon.png" class="w-6 h-6" data-v-5381c114></div>
+                                <div class="flex flex-row place-items-center bg-gray-800 rounded-xl p-2" data-v-5381c114>
+                                    <p class="text-sm text-green-600" data-v-5381c114>
+                                        Changing the vanity code.
+                                    </p> <img src="premium-icon.png" class="w-6 h-6" data-v-5381c114></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-6 bg-gray-900 justify-center w-full gap-4" data-v-5381c114>
+                        <h2 class="text-center font-semibold text-lg md:text-3xl text-blue-600" data-v-5381c114>
+                            Security Bot has some other features.
+                        </h2>
+                        <div class="flex flex-col gap-3" data-v-5381c114>
+                            <p class="text-gray-300 text-center" data-v-5381c114>
+                                The bot provides some other features alongside its anti nuke features, here is what you can get by adding Security Bot to your Discord server:
+                            </p>
+                            <div class="actions flex flex-col gap-2" data-v-5381c114>
+                                <div class="flex flex-row place-items-center bg-gray-800 rounded-xl p-2" data-v-5381c114>
+                                    <p class="text-sm text-green-600" data-v-5381c114>
+                                        Anti Ghost-Ping
+                                    </p> <img src="premium-icon.png" class="w-6 h-6" data-v-5381c114></div>
+                                <div class="flex flex-row place-items-center bg-gray-800 rounded-xl p-2" data-v-5381c114>
+                                    <p class="text-sm text-green-600" data-v-5381c114>
+                                        Anti Invite-Link
+                                    </p> <img src="premium-icon.png" class="w-6 h-6" data-v-5381c114></div>
+                                <div class="flex flex-row place-items-center bg-gray-800 rounded-xl p-2" data-v-5381c114>
+                                    <p class="text-sm text-green-600" data-v-5381c114>
+                                        Anti Raid/Spam
+                                    </p> <img src="premium-icon.png" class="w-6 h-6" data-v-5381c114></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-6 bg-gray-900 justify-center w-full gap-4" data-v-5381c114>
+                        <h2 class="text-center font-semibold text-lg md:text-3xl text-blue-600" data-v-5381c114>
+                            How Security Bot stops nuke attempts?
+                        </h2>
+                        <p class="p-4 text-center" data-v-5381c114>
+                            Security Bot's anti nuke system add limits to almost all the moderation\dangerous actions on your Discord server for free, although there are some heavy things that the normal bot can't handle because it will slow down other features so we have moved
+                            them into the premium version.
+                        </p>
+                        <div class="flex flex-col gap-1.5" data-v-5381c114>
+                            <h2 class="font-semibold" data-v-5381c114>Example:</h2>
+                            <div class="flex flex-col gap-1" data-v-5381c114>
+                                <p class="text-gray-300 font-bold" data-v-5381c114>Beast Mode Settings:</p>
+                                <div class="flex flex-col gap-2" data-v-5381c114>
+                                    <p class="p-2 rounded-xl bg-gray-800 text-green-600" data-v-5381c114>
+                                        The global score is set to: 25
+                                    </p>
+                                    <p class="p-2 rounded-xl bg-gray-800 text-green-600" data-v-5381c114>
+                                        Kick score: 5
+                                    </p>
+                                    <p class="p-2 rounded-xl bg-gray-800 text-green-600" data-v-5381c114>
+                                        Ban score: 10
+                                    </p>
+                                    <p class="p-2 rounded-xl bg-gray-800 text-green-600" data-v-5381c114>
+                                        Punishment type: Clear Roles
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-1" data-v-5381c114>
+                                <p class="text-gray-300 font-bold" data-v-5381c114>Anti Nuke Settings:</p>
+                                <div class="flex flex-col gap-2" data-v-5381c114>
+                                    <p class="p-2 rounded-xl bg-gray-800 text-green-600" data-v-5381c114>
+                                        Ban limit: 2
+                                    </p>
+                                    <p class="p-2 rounded-xl bg-gray-800 text-green-600" data-v-5381c114>
+                                        Kick limit: 5
+                                    </p>
+                                    <p class="p-2 rounded-xl bg-gray-800 text-green-600" data-v-5381c114>
+                                        Ban &amp; Kick punishment type: Ban
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-1" data-v-5381c114>
+                                <p class="text-gray-300 font-bold" data-v-5381c114>Logs:</p>
+                                <div class="flex flex-col gap-2" data-v-5381c114>
+                                    <p class="p-2 rounded-xl bg-gray-800 text-pink-600" data-v-5381c114>
+                                        @User-1 banned a random member. +10 score
+                                    </p>
+                                    <p class="p-2 rounded-xl bg-gray-800 text-pink-600" data-v-5381c114>
+                                        @User-2 kicked a random member. +5 score
+                                    </p>
+                                    <p class="p-2 rounded-xl bg-gray-800 text-pink-600" data-v-5381c114>
+                                        @User-1 banned another random member. +10 score
+                                    </p>
+                                    <p class="p-2 rounded-xl bg-gray-800 text-pink-600" data-v-5381c114>
+                                        @Security banned @User-1 as he has reached the ban limit.
+                                    </p>
+                                    <p class="p-2 rounded-xl bg-gray-800 text-pink-600" data-v-5381c114>
+                                        The beast woke up as the server has reached the global score.
+                                    </p>
+                                    <p class="p-2 rounded-xl bg-gray-800 text-pink-600" data-v-5381c114>
+                                        @User-2 banned a random member.
+                                    </p>
+                                    <p class="p-2 rounded-xl bg-gray-800 text-pink-600" data-v-5381c114>
+                                        @Security took all the roles from @User-2 as he has done a dangrous action while the beast was awake.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-6 bg-gray-900 justify-center w-full gap-4" data-v-5381c114>
+                        <h2 class="text-center font-semibold text-lg md:text-3xl text-blue-600" data-v-5381c114>
+                            Is there anything besides the anti nuke?
+                        </h2>
+                        <p class="p-4 text-center" data-v-5381c114>
+                            Yeah, Security Bot has another feature of stopping nuke attempts, this is what we call Beast Mode, while this feature is enabled, there will be a global score that will reset every one hour, each dangerous action has its own score and can be customized
+                            by the owners, when the Discord server reaches the global score, the beast wakes up, while the beast is awake any dangerous action will result in an instant punishment.
+                        </p>
+                    </div>
+                    <div class="flex flex-col p-6 bg-gray-900 justify-center w-full gap-4" data-v-5381c114>
+                        <h2 class="text-center font-semibold text-lg md:text-3xl text-blue-600" data-v-5381c114>
+                            Security Bot can recognize your trusted friends and mods.
+                        </h2>
+                        <p class="p-4 text-center" data-v-5381c114>
+                            There is another main feature of Security Bot, we call it whitelist which can be used to allow trusted users bypass anti nuke features, each action has its own whitelisted users &amp; roles, you can even whitelist channels.
+                        </p>
+                    </div>
+                    <div class="flex flex-col p-6 bg-gray-900 justify-center w-full gap-4" data-v-5381c114>
+                        <h2 class="text-center font-semibold text-lg md:text-3xl text-blue-600" data-v-5381c114>
+                            Moderation Commands
+                        </h2>
+                        <div class="flex flex-col gap-3" data-v-5381c114>
+                            <p class="text-gray-300 text-md text-center" data-v-5381c114>
+                                We provide some moderation commands in order to make your tasks easier, each moderation command supports multiple selection, adding reasons and delays, no need to order anything, just make sure the message starts with the command XD.
+                            </p>
+                            <div class="flex flex-col gap-1" data-v-5381c114>
+                                <p class="text-gray-300 text-sm" data-v-5381c114>All of these will work:</p>
+                                <div class="flex flex-col gap-2" data-v-5381c114>
+                                    <p class="p-2 rounded-xl bg-gray-800 text-pink-600" data-v-5381c114>
+                                        s!mute @Sina#1197 Spamming 197d @Safa#1197
+                                    </p>
+                                    <p class="p-2 rounded-xl bg-gray-800 text-pink-600" data-v-5381c114>
+                                        s!mute @Safa#1197 197d Spamming @Sina#1197
+                                    </p>
+                                    <p class="p-2 rounded-xl bg-gray-800 text-pink-600" data-v-5381c114>
+                                        s!mute 197d 333269778196201473 Spamming @Safa#1197
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-6 justify-center place-items-center w-full gap-4" data-v-5381c114>
+                        <h2 class="text-center font-semibold text-lg md:text-3xl" data-v-5381c114>
+                            It's Time to Secure Your Discord Server.
+                        </h2> <a href="#" class="button p-4 rounded-xl bg-blue-900 w-44 text-center" data-v-5381c114>Add To Discord</a></div>
+                </div>
+                <div class="footer bg-gray-800 flex flex-row sm:px-8 py-4 px-4 bottom-0" data-v-29a0bec5>
+                    <div class="flex flex-col" data-v-29a0bec5>
+                        <div class="flex flex-col" data-v-29a0bec5>
+                            <h2 class="text-2xl font-semibold" data-v-29a0bec5>Security Bot</h2>
+                            <p class="text-md" data-v-29a0bec5>Eliminate Unwanted Behavior in Seconds.</p>
+                            <p class="text-gray-400 text-sm py-2" data-v-29a0bec5>
+                                © 2021 Security Bot - Vishwajeet8005.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.__NUXT__ = (function(a, b) {
+            return {
+                layout: "default",
+                data: [{}],
+                fetch: {},
+                error: a,
+                state: {
+                    guilds: {
+                        guilds: a
+                    },
+                    user: {
+                        loggedIn: false,
+                        id: a,
+                        username: a,
+                        tag: a,
+                        avatarUrl: a
+                    }
+                },
+                serverRendered: true,
+                routePath: b,
+                config: {
+                    _app: {
+                        basePath: b,
+                        assetsPath: "\u002F_nuxt\u002F",
+                        cdnURL: a
+                    }
+                }
+            }
+        }(null, "\u002F"));
+    </script>
+    <script src="/_nuxt/84a21a8.js" defer></script>
+    <script src="/_nuxt/5fe6ada.js" defer></script>
+    <script src="/_nuxt/0f77e43.js" defer></script>
+    <script src="/_nuxt/58f1662.js" defer></script>
+    <script src="/_nuxt/1c0e49c.js" defer></script>
+    <script type="text/javascript">
+        (function() {
+            window['__CF$cv$params'] = {
+                r: '687dfd092c2d0de4',
+                m: '8298f3f1ab42a25a59b60151982a126fdc63e1c6-1630493959-1800-AWOYR0oP30Gi0UwpBpqwUtP62QISuJfd9IaKtDQvUFxy2oC6mTmOSKSlEolfyESQbvsl8Df+tgMLRH/5mgNl+out/lS0u3YC45dxgjiZlQGg68Eb/DdVSpmgay9homMtrg==',
+                s: [0x94b711c463, 0x94fd8f08db],
+                u: '/cdn-cgi/challenge-platform/h/b'
+            }
+        })();
+    </script>
+</body>
+
+</html>
